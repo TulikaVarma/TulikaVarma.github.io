@@ -7,12 +7,15 @@ title: Home
 ---
 
 # Tulika Varma
-### Computing Science 
+*Computing Science*
 
-<!--Tulika Varma Computing Science -->
-<div style = "text-align:centre;">
-    <h1>Tulika Varma</h1>
-    <p>Computing Science</p>
+---
+<!--Links to other pages-->
+<div style ="text-align: center; margin-bottom: 20px;">
+    <a href="/Contact" class ="btn">Contact</a>
+    <a href="/Background Information" class="btn">Background Information</a>
+    <a href="/Projects" class="btn">Projects</a>
 </div>
 
+---
 
