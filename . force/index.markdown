@@ -9,4 +9,10 @@ title: Home
 # Tulika Varma
 ### Computing Science 
 
+<!--Tulika Varma Computing Science -->
+<div style = "text-align:centre;">
+    <h1>Tulika Varma</h1>
+    <p>Computing Science</p>
+</div>
+
 
