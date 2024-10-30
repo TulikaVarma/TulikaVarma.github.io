@@ -2,11 +2,62 @@
 <html>
 <head>
     <title>Tulika Varma</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <div class="container">
+    <style>
+        .container {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                margin: 0;
+        }
+        .section1 {
+        flex: 1.25;
+            background-color: #D69F7E;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .section2 {
+            flex: 8.75;
+            background-color: #E6B8A2;
+        }
+        header {
+            font-size: 1.75em;
+            color: #432818;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        h1 {
+            font-size: 1.75em;
+            color: #432818;
+            margin: 0;
+        }
+        h2 {
+            font-size: 0.75em;
+            color: #774936;
+            margin: 5px 0;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-left: 30px; /* Add space between links and header */
+        }
+        .nav-link {
+            background-color: #8A5A44;
+            color: #D69F7E;
+            padding: 7.5px 10px;
+            border-radius: 15px;
+            margin-right: 10px; 
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+        .nav-link:hover {
+            background-color: #B07D62;
+        }
+    </style>
+    <div class ="container">
         <div class="section1">
             <header>
                 <h1>Tulika Varma</h1>
@@ -19,22 +70,24 @@
                 <a href="Projects.html" class="nav-link">Projects</a>
             </nav>
         </div>
+    </div>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <div class="section2">
+        <div class="image-container">
+            <img class="image-cropped-transform" src="assets/images/COD WW2.jpg" alt="Cant see it lol">
+            <div class="image-caption"> COD yuh</div>
+        </div>
 
-        <div class="section2">
-            <div class="image-container">
-                <img class="image-cropped-transform" src="assets/images/COD WW2.jpg" alt="Cant see it lol">
-                <div class="image-caption"> COD yuh</div>
-            </div>
+        <div class="image-container">
+            <img class="image-cropped-transform" src="assets/images/Skull with cigarette Painting.jpg" alt="Cant see it lol">
+            <div class="image-caption"> Skull with cigarette</div>
+        </div>
 
-            <div class="image-container">
-                <img class="image-cropped-transform" src="assets/images/Skull with cigarette Painting.jpg" alt="Cant see it lol">
-                <div class="image-caption"> Skull with cigarette</div>
-            </div>
-
-            <div class="image-container">
-                <img class="image-cropped-transform" src="assets/images/Books.jpg" alt="Cant see it lol">
-                <div class="image-caption"> Books</div>
-            </div>
+        <div class="image-container">
+            <img class="image-cropped-transform" src="assets/images/Books.jpg" alt="Cant see it lol">
+            <div class="image-caption"> Books</div>
         </div>
     </div>
 </body>
