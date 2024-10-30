@@ -1,17 +1,15 @@
 
 .section2 {
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-start;
+    display:flex;
+    justify-content: space-around;
+    align-items: flex start;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    flex: 8.75;
     background-color: #E6B8A2;
-    padding: 20px; 
-    overflow: hidden; 
 }
 
 .image-container {
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 1rem;
     width: 30%; 
     position: relative;
     overflow: hidden; 
@@ -19,17 +17,18 @@
 }
 
 .image-cropped-transform {
+    /*float:left;
     width: 100px;
     height: 150px;
     object-fit: scale-down;
-    overflow:hidden;
-    /*position: absolute;
+    overflow:hidden;*/
+    position: absolute;
     top: 0;
     width: 100px;
     height: 200px;
     object-fit: cover;
     object-position: 55%;
-    transform: scale(0.5) translate(0, 5%);*/
+    transform: scale(0.5) translate(0, 5%);
 }
 
 .image-caption {
