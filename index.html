@@ -18,24 +18,22 @@
                 padding: 20px;
             }
             .section2 {
-                flex: 8.75;
-                background-color: #E6B8A2;
                 display: flex;
-                align-items: center;
                 justify-content: space-around;
-                padding:20px;
+                align-items: flex-start;
+                background-color: #E6B8A2;
+                gap:10px;
             }
             .image-main{
                 position: relative;
+                overflow: hidden;
                 width:27.5%;
-                margin-left: 10px;
+                border-radius: 10px;
             }
             .image-container{
                 width: 100%;
-                height: auto;
-                border-radius: 10px;
-                box-shadow: #E6B8A2;
-                
+                height: 350px;
+                object-fit: cover;
             }
             .image-caption{
                 position: absolute;
@@ -104,6 +102,7 @@
                     <a href="Projects.html" class="nav-link">Projects</a>
                 </nav>
             </div>
+            
             <div class="section2">
             <link rel="stylesheet" href="style.css">
                 <div class="image-container">
