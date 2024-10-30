@@ -1,37 +1,100 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.section1 {
+    flex: 1.25;
+    background-color: #D69F7E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.section2 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    background-color: #E6B8A2;
+    padding: 20px; 
+    overflow: hidden; 
+}
+
 .image-container {
-    width: 200px; 
+    width: 30%; 
     position: relative;
-    overflow: hidden;
+    overflow: hidden; 
     border-radius: 10px;
 }
-.image-container img {
-    width: 200px;
-    height: auto; 
-    max-height: 200px;
-    object-fit: cover; 
-    border-radius: 5px;
-}
+
 .image-cropped-transform {
     position: absolute;
     top: 0;
-    width: 200px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: 55%;
     transform: scale(0.5) translate(0, 5%);
 }
+
 .image-caption {
     position: absolute;
-    bottom: 100px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 2em;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.9em;
     display: none;
+    text-align: center;
 }
+
 .image-container:hover .image-caption {
     display: block;
+}
+
+header {
+    font-size: 1.75em;
+    color: #432818;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1 {
+    font-size: 1.75em;
+    color: #432818;
+    margin: 0;
+}
+
+h2 {
+    font-size: 0.75em;
+    color: #774936;
+    margin: 5px 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 30px;
+}
+
+.nav-link {
+    background-color: #8A5A44;
+    color: #D69F7E;
+    padding: 7.5px 10px;
+    border-radius: 15px;
+    margin-right: 10px; 
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.nav-link:hover {
+    background-color: #B07D62;
 }
