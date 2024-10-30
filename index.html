@@ -21,6 +21,32 @@
                 flex: 8.75;
                 background-color: #E6B8A2;
             }
+            .image-main{
+                position: relative;
+                width: 30%;
+            }
+            .image-container{
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            }
+            .image-caption{
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: rgba(0, 0, 0, 0.6);
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 5px;
+                font-size: 0.9em;
+                display: none;
+                text-align: center;
+            }
+            .image-container:hover .image-caption{
+                display: block;
+            }
             header {
                 font-size: 1.75em;
                 color: #432818;
@@ -73,7 +99,20 @@
                 </nav>
             </div>
             <div class="section2">
-                <img src ="assets/images/pink-test-image.png" alt="Cant view image rn" width ="200" height="200">
+                <div class="image-container">
+                    <img src="assets/images/COD WW2.jpg" alt="Cant see it lol">
+                    <div class="image-caption"> COD yuh</div>
+                </div>
+
+                <div class="image-container">
+                    <img src="assets/images/Skull with cigarette Painting.jpg" alt="Cant see it lol">
+                    <div class="image-caption"> COD yuh</div>
+                </div>
+
+                <div class="image-container">
+                    <img src="assets/images/Books.jpg" alt="Cant see it lol">
+                    <div class="image-caption"> COD yuh</div>
+                </div>
             </div>
         </div>
     </body>
