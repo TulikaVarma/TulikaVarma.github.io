@@ -19,6 +19,8 @@
             }
             .section2 {
                 flex: 8.75;
+                display: flex;
+                justify-content: space-between;
                 background-color: #E6B8A2;
             }
             header {
@@ -34,7 +36,7 @@
                 margin: 0;
             }
             h2 {
-                font-size: 0.75em;
+                font-size: 1.3em;
                 color: #774936;
                 margin: 5px 0;
             }
@@ -42,7 +44,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
-                margin-left: 30px; /* Add space between links and header */
+                margin-left: 30px;
             }
             .nav-link {
                 background-color: #8A5A44;
@@ -58,25 +60,50 @@
             }
 
             .text-part {
-            flex: 1;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center; 
-            font-size: 1.2em;
-            color: #432818;
+                width:50%;
+                padding: 20px;
+                margin-top: 10px;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: row;
+                justify-content: center; 
+                font-size: 1.2em;
+                color: #432818;
             }
             .image-text-part {
-                width:50%; 
+                flex:1; 
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center; 
                 padding: 20px;
             }
+            .image-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-right: 15px;
+            }
             .image-container {
-                width: 80%; 
-                height: auto;
+                flex:1;
+                width: 100%; 
+                height: 550px;
+                flex-direction: column;
+                position: relative;
+                overflow: hidden; 
+                margin-top: 20px;
+                border-radius: 10px;
+                margin-right: 15px;
+            }
+            .image-cropped-transform-B {
+                position: absolute;
+                top: 50%; 
+                left: 50%; 
+                width: 100%; 
+                height: 100%; 
+                object-fit: cover; 
+                object-position: center; 
+                transform: translate(-50%, -50%); 
             }
         </style>
     </head>
@@ -97,17 +124,29 @@
 
             <div class="section2">
                 <div class="text-part">
-                    <h2>Welcome to my page! Here, you'll find information about my
-                        past experiences, work and volunteer experiences and about my background.</h2>
-                    <p> Hi! I am Tulika and I am from Uganda! I studied and graduated highschool from 
+                    <h2>
+                        Hi! I am Tulika and I am from Uganda! I studied and graduated highschool from 
                         ISU. I am currently studying computing science in university! Fun fact: I have 
                         only had one job in my entire life! and that was as a math tutor. At the moment
                         I am doing a few side projects outside of class: inlcuding being a junior developer
                         at a coding club I Co-Founded. It's called Blueprint and we make tech solutions for 
                         non-profits. I am also the President for RHA, my job requires me to ensure regular
-                        events for up to 2000 residents! Very exciting stuff! </p>
+                        events for up to 2000 residents! Very exciting stuff!
+                    </h2>
                 </div>
-    
+
+                <div class="image-wrapper">
+                    <div class ="image-container">
+                        <img class ="image-cropped-transform-B" src = "assets/images/Plant.jpg" 
+                            alt = "Cant view image">
+                    </div>
+                    <div class ="image-text-part">
+                        <h2>
+                            If you're curious about my work and volunteer experiences, check out my
+                            linkdn at the contacts page!
+                        </h2>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
