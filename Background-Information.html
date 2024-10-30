@@ -56,6 +56,28 @@
             .nav-link:hover {
                 background-color: #B07D62;
             }
+
+            .text-part {
+            flex: 1; /* Takes up half of section2 */
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center the text vertically */
+            font-size: 1.2em;
+            color: #432818;
+        }
+        .image-text-part {
+            flex: 1; /* Takes up half of section2 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Center the image and text */
+            padding: 20px;
+        }
+        .image-container {
+            width: 80%; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
         </style>
     </head>
     <body>
@@ -72,8 +94,17 @@
                     <a href="Projects.html" class="nav-link">Projects</a>
                 </nav>
             </div>
+
             <div class="section2">
-                <!-- Empty section for visual separation -->
+                <div class="text-part">
+                    <p>Welcome to my page! Here, you'll find information about my
+                        past experiences, work and volunteer experiences and about my background.</p>
+                </div>
+    
+                <div class="image-text-part">
+                    
+                    <p>Here is some text below the image that describes it or provides additional information.</p>
+                </div>
             </div>
         </div>
     </body>
