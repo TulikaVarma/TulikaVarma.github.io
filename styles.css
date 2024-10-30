@@ -19,8 +19,8 @@
 }
 
 .image-cropped-transform {
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 150px;
     object-fit: cover;
     /*position: absolute;
     top: 0;
