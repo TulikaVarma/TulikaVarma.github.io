@@ -42,7 +42,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
-                margin-left: 30px; /* Add space between links and header */
+                margin-left: 30px;
             }
             .nav-link {
                 background-color: #8A5A44;
@@ -56,6 +56,44 @@
             .nav-link:hover {
                 background-color: #B07D62;
             }
+
+            .image-container-contact{
+                width: 650px;
+                height: 750px; 
+                position: left;
+                overflow: hidden; 
+                display:flex;
+                flex-direction: column;
+                border-radius: 10px;
+                margin: 20px;
+            }
+            .image-cropped-transform {
+                position: absolute;
+                top: 50%; 
+                left: 50%; 
+                width: 100%; 
+                height: 100%; 
+                object-fit: cover; 
+                object-position: center; 
+                transform: translate(-50%, -50%); 
+            }
+
+            .image-caption {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: rgba(0, 0, 0, 0.6);
+                color: #fff;
+                padding: 10px;
+                border-radius: 10px;
+                font-size: 1em;
+                display: none;
+                text-align: center;
+            }
+            .image-container:hover .image-caption {
+                display: block;
+            }
         </style>
     </head>
     <body>
@@ -65,14 +103,19 @@
                     <h1>Tulika Varma</h1>
                     <h2><em>Computing Science</em></h2>
                 </header>
-
                 <nav class="nav-links">
                     <a href="index.html" class="nav-link">Home</a>
                     <a href="Background-Information" class="nav-link">Background Information</a>
                     <a href="Projects.html" class="nav-link">Projects</a>
                 </nav>
             </div>
+
             <div class="section2">
+                <div class = "image-container-contact">
+                    <img class="image-cropped-transform" src="assets/images/Self-Image.jpg" alt="Self Portrait Cartoon">
+                    <img class="image-caption"> Reference: 
+                    <a href="https://www.pinterest.com/pin/11822017766262825/" style = "color:#8A5A44">Click Me!</a>
+                </div>
                 
             </div>
         </div>
