@@ -27,19 +27,28 @@
             /*justify-content: space-around;
             flex-wrap: nowrap;*/
         }
+        .section2-info {
+            font-size: 2em;
+            color: #432818;
+            margin-bottom: 20px;
+            /*position: absolute;
+            display:flex;
+            align-items: center;*/
+        }
+        .image-row{
+            display:flex;
+            justify-content: flex-start;
+            width:100%;
+        }        
         .image-container {
             width: 650px;
             height: 750px; 
             position: relative;
             overflow: hidden; 
             display:flex;
-            justify-content: flex-start;
             flex-direction: column;
             border-radius: 10px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            margin-left: 10px;
-            margin-right: 10px;
+            margin: 10px;
         }
 
         .image-cropped-transform {
@@ -76,14 +85,6 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-        }
-        .section2-info {
-            font-size: 2em;
-            color: #432818;
-            margin-bottom: 20px;
-            /*position: absolute;
-            display:flex;
-            align-items: center;*/
         }
         h1 {
             font-size: 1.75em;
@@ -137,23 +138,26 @@
             <h2> Curious about me? Hover over the pictures to learn a bit more about my hobbies outside of 
                 university and work</h2>
         </section2-info>
-        <div class="image-container">
-            <img class="image-cropped-transform" src="assets/images/COD WW2.jpg" alt="Cant see it lol">
-            <div class="image-caption"> This is a picture from one of my favorite video games. It is called Call Of Duty
-                World War 2. I played this game alot growing up and it holds a special place in my heart.</div>
-        </div>
 
-        <div class="image-container">
-            <img class="image-cropped-transform" src="assets/images/Skull with cigarette Painting.jpg" alt="Cant see it lol">
-            <div class="image-caption"> This is a picture of one of my favorite paintings. It is called Skull
-                with cigarette by Leonardo da vinci. It has been a big inspiration in my art and I went 
-                to see this painting in person last year!</div>
-        </div>
-
-        <div class="image-container">
-            <img class="image-cropped-transform" src="assets/images/Books.jpg" alt="Cant see it lol">
-            <div class="image-caption"> This is a general picture of some books. It mostly represents my love for 
-                reading, as it is one of my favorite hobbies.</div>
+        <div class="image-row">
+            <div class="image-container">
+                <img class="image-cropped-transform" src="assets/images/COD WW2.jpg" alt="Cant see it lol">
+                <div class="image-caption"> This is a picture from one of my favorite video games. It is called Call Of Duty
+                    World War 2. I played this game alot growing up and it holds a special place in my heart.</div>
+            </div>
+    
+            <div class="image-container">
+                <img class="image-cropped-transform" src="assets/images/Skull with cigarette Painting.jpg" alt="Cant see it lol">
+                <div class="image-caption"> This is a picture of one of my favorite paintings. It is called Skull
+                    with cigarette by Leonardo da vinci. It has been a big inspiration in my art and I went 
+                    to see this painting in person last year!</div>
+            </div>
+    
+            <div class="image-container">
+                <img class="image-cropped-transform" src="assets/images/Books.jpg" alt="Cant see it lol">
+                <div class="image-caption"> This is a general picture of some books. It mostly represents my love for 
+                    reading, as it is one of my favorite hobbies.</div>
+            </div>
         </div>
     </div>
 </body>
