@@ -11,6 +11,15 @@
     object-fit: cover; 
     border-radius: 5px;
 }
+.image-cropped-transform {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 55%;
+    transform: scale(0.5) translate(0, 5%);
+}
 .image-caption {
     position: absolute;
     bottom: 100px;
