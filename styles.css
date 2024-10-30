@@ -1,48 +1,81 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.section1 {
+    flex: 1.25;
+    background-color: #D69F7E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
 
 .section2 {
-    display:flex;
+    display: flex;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: flex-start; 
     overflow: hidden;
     flex-wrap: nowrap;
     flex: 8.75;
     background-color: #E6B8A2;
 }
 
+header {
+    font-size: 1.75em;
+    color: #432818;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1 {
+    font-size: 1.75em;
+    color: #432818;
+    margin: 0;
+}
+
+h2 {
+    font-size: 0.75em;
+    color: #774936;
+    margin: 5px 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 30px;
+}
+
+.nav-link {
+    background-color: #8A5A44;
+    color: #D69F7E;
+    padding: 7.5px 10px;
+    border-radius: 15px;
+    margin-right: 10px; 
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.nav-link:hover {
+    background-color: #B07D62;
+}
+
 .image-container {
-    width: 100px;
-    height: 250px; 
-    position: relative;
-    overflow: hidden; 
-    border-radius: 10px;
-}
-
-.image-cropped-transform {
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    object-position: center; 
-    transform: translate(-50%, -50%); 
-}
-
-.image-caption {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 0.9em;
-    display: none;
     text-align: center;
 }
 
-.image-container:hover .image-caption {
-    display: block;
+.image-cropped-transform {
+    max-width: 100%;
+    height: auto;
 }
 
+.image-caption {
+    font-size: 1em;
+    color: #432818;
+    margin-top: 5px;
+}
