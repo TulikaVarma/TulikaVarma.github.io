@@ -24,8 +24,8 @@
     overflow:hidden;*/
     position: absolute;
     top: 0;
-    width: 100px;
-    height: 200px;
+    width: 30px;
+    height: 45px;
     object-fit: cover;
     object-position: 55%;
     transform: scale(0.5) translate(0, 5%);
