@@ -6,7 +6,6 @@
             .container {
                 display: flex;
                 flex-direction: column;
-                height: 100vh;
                 margin: 0;
             }
             .section1 {
@@ -20,6 +19,9 @@
             .section2 {
                 flex: 8.75;
                 background-color: #E6B8A2;
+                display:flex;
+                align-items: center;
+                padding:20px;
             }
             header {
                 font-size: 1.75em;
@@ -58,16 +60,13 @@
             }
 
             .image-container-contact{
-                width: 650px;
-                height: 750px; 
-                position: left;
+                width: 30%;
+                position: relative;
                 overflow: hidden; 
-                display:flex;
-                flex-direction: column;
                 border-radius: 10px;
-                margin: 20px;
+                margin-right: 15px;
             }
-            .image-cropped-transform {
+            .image-cropped-transform-contact {
                 position: absolute;
                 top: 50%; 
                 left: 50%; 
@@ -94,6 +93,11 @@
             .image-container:hover .image-caption {
                 display: block;
             }
+            .text-container-contact{
+                flex:1;
+                font-size: 1.2em;
+                color: #432818;
+            }
         </style>
     </head>
     <body>
@@ -112,11 +116,15 @@
 
             <div class="section2">
                 <div class = "image-container-contact">
-                    <img class="image-cropped-transform" src="assets/images/Self-Image.jpg" alt="Self Portrait Cartoon">
+                    <img class="image-cropped-transform-contact" src="assets/images/Self-Image.jpg" alt="Self Portrait Cartoon">
                     <img class="image-caption"> Reference: 
                     <a href="https://www.pinterest.com/pin/11822017766262825/" style = "color:#8A5A44">Click Me!</a>
                 </div>
                 
+                <div class="text-container-contact">
+                    <h2> Test </h2>
+                    <p>Is this to the left of the picture?</p>
+                </div>
             </div>
         </div>
     </body>
