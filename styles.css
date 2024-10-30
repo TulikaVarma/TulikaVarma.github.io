@@ -21,7 +21,8 @@
 .image-cropped-transform {
     width: 100px;
     height: 150px;
-    object-fit: cover;
+    object-fit: scale-down;
+    overflow:hidden;
     /*position: absolute;
     top: 0;
     width: 100px;
